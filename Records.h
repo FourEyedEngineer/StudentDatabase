@@ -26,9 +26,9 @@ public:
 	string getfname(); //return first name
 	string getlname(); //return last name
 
-					   // overridables
-	virtual char getgrade() = 0;		// This is a pure virtual function -> Student is an abstract class
-										// It is defined to force children to implement this interface function.
+	// overridables
+	virtual char getgrade() = 0; // This is a pure virtual function -> Student is an abstract class
+				     // It is defined to force children to implement this interface function.
 };
 
 //Child classes
