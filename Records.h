@@ -51,8 +51,10 @@ private:
 	int count;
 public:
 	Records(); // construct record
-	~Records() {
-		for (int i = 0; i < count; i++) {
+	~Records() 
+	{
+		for (int i = 0; i < count; i++) 
+		{
 			delete students[i];
 		}
 	}
@@ -66,7 +68,8 @@ public:
 	bool save(string&); //save student info from record database to file
 
 	int getcount() { return count; } //number of students in lists
-	Student& operator[](int idx) { //overload [] operator
+	Student& operator[](int idx) //overload [] operator
+	{
 		return *students[idx];
 	}
 };
